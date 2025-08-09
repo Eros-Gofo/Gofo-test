@@ -1,0 +1,35 @@
+{
+  "steps": [
+    {
+      "id": "start",
+      "question": "Does the customer have a tracking number?",
+      "options": [
+        { "text": "Yes", "next": "verifyName" },
+        { "text": "No", "next": "noTracking" }
+      ]
+    },
+    {
+      "id": "verifyName",
+      "question": "Verify customer's name. Is it correct?",
+      "options": [
+        { "text": "Yes", "next": "done" },
+        { "text": "No", "next": "updateName" }
+      ]
+    },
+    {
+      "id": "noTracking",
+      "question": "Advise customer to contact the seller for tracking info.",
+      "options": []
+    },
+    {
+      "id": "done",
+      "question": "End of process.",
+      "options": []
+    },
+    {
+      "id": "updateName",
+      "question": "Update the name in the system.",
+      "options": []
+    }
+  ]
+}
