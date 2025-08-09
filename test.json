@@ -2,7 +2,7 @@
   "steps": [
     {
       "id": "start",
-      "question": "Does the customer have a tracking number? HAHAHAHAHA",
+      "question": "Does the customer have a tracking number?",
       "options": [
         { "text": "Yes", "next": "verifyName" },
         { "text": "No", "next": "noTracking" }
@@ -33,4 +33,5 @@
     }
   ]
 }
+
 
